@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando Imagens</title>
+</head>
+
+<body>
+    <h1>Resumão das Aulas</h1>
+
+    <!-- <h2>Hierarquia de Títulos</h2>
+    <h2>Parágrafos e formatação de textos</h2>
+    <h2>Listas</h2>
+    <ul></ul>
+    <ol></ol>
+    <h2>Links</h2> -->
+
+    <h2>Arquitetura EC2</h2>
+    <p>Segue um pequeno exemplo de como podemos usar imagem em nossa página html.</p>
+    <!-- IMG é uma self closing tag, fecha em si mesma -->
+    <img src="https://d2908q01vomqb2.cloudfront.net/d435a6cdd786300dff204ee7c2ef942d3e9034e2/2020/06/09/1-9.png"
+        alt="Imagem de uma arquitetura de nuvem utilizando serviços AWS" width="80%">
+
+    <h2>Dimensionamento na AWS</h2>
+    <p> Antes da pandemia, a plataforma tinha uma média de 500 procedimentos por dia. A arquitetura consistia em: uma
+        base relacional MySQL para gerenciamento de usuários e armazenamento de permissões concedidas, um servidor de
+        aplicativos PHP para o back-end e frontend da aplicação web, um sistema de arquivos NFS para o repositório de
+        documentos gerados e o armazenamento de recursos estáticos do aplicativo.
+        <br>
+        <img src="img/alb_natGateway.png" width="90%">
+        <br>
+        A pandemia do COVID-19 obrigou o Virtual Commissioner a escalar e fornecer mais capacidade para suportar o
+        fardo. Um conjunto de máquinas virtuais do EC2 foi implantado em paralelo para atender à crescente demanda de
+        processamento.
+        <br>
+        <br>
+        A plataforma foi projetada para lidar com o número de usuários inicialmente planejado, no entanto, esse número
+        aumentou substancialmente como resultado da pandemia.
+        <br>
+        <br>
+        Isso causou quedas esporádicas no site, criando assim indisponibilidade e impossibilidade de gerar certificados
+        de tráfego de cidadãos.
+        <br>
+        <br>
+        Da AWS, devido à importância desta plataforma, duas linhas de ação foram tomadas, juntamente com o cliente, para
+        remediar a situação e garantir a disponibilidade do Virtual Commissioner.
+    </p>
+
+    <h2>Utilizando Elastic Load Balancer (ELB)</h2>
+    <img src="img/arquitetura_siteEstatico.png" width="90%">
+    <p>O <b>ELB</b> permite que as requisições sejam distribuídas em múltiplos destinos, e se uma validação do status
+        (health check) retornar com falha, o pacote deixa de ser enviado para o nó afetado.
+        <br>
+        <br>
+        Uma vantagem da <u>arquitetura Multi-AZ (Multi Availability Zone)</u> é permiter que a aplicação continue ativa,
+        contra a queda de uma Zona de Disponibilidade, garantindo escalabilidade, performance e segurança.
+        <br>
+        <br>
+        Muitos serviços da AWS possuem o Multi-AZ nativo, entregando um nível de qualidade alto. A título de exemplo são
+        eles, o <b>Amazon S3</b> (Simple Storage Service) e o <b>Amazon DynamoDB</b>.
+    </p>
+
+    <H3L
+
+    <audio controls>
+
+        <source src="audio/Michael Jackson - Billie Jean (Lyrics).mp3">
+
+    </audio>
+
+
+    <!-- <picture>
+        <source 
+        media="(min-width: 640px)"
+        srcset="/img/ec2_rds.png"
+        width="150px">
+
+    </picture> -->
+
+
+
+
+</body>
+
+</html>
