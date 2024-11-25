@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* paletra de cores
+    /* sugestão de cor cadetblue */
+    /* azul royal #4169E1 */
+    /* #e1b941  amarelo meio mostarda*/
+    /* cereja #953553 */
+    /* vermelho vibrante #ff4500 */
+    /* laranja #f66b0e */
+
+
+
+
+body {
+    background-color: #e1b941;
+
+}
+
+/* Estilo do título */
+h1{
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: #f66b0e;
+
+}
+
+
+/* Estilo do nav */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4169E1;  /* Cor do "underlining" */
+    font-family: "Kanit", sans-serif;
+
+}
+
+nav ul li {
+    margin: 0 50px;  /* Espaço entre os itens do menu */
+    
+}
+
