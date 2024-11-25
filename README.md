@@ -4,6 +4,9 @@
 Curso de carga horária de 100h
 **Início:** 28/10/2024 _ **Término:** 13/12/2024
 - HTML, CSS, JavaScript
+
+
+
 **Temas dos Encontros de Competências Profissionais**
 
 > Foco no Cliente Análise de dados e cenário Atenção ao detalhe e Resolução de problemas
