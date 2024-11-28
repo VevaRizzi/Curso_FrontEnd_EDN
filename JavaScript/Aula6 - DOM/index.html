@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>Bichinhos</h1>
+
+    <!-- formulario -->
+    <form action="#" method="get">
+        <fieldset>
+            <legend>PET</legend>
+
+            <div class="campo">
+                <label for="nome_pet">Nome:</label>
+                <input type="text" name="nome_pet" id="nome_pet" />
+            </div>
+
+            <div class="campo">
+                <p>Porte:</p>
+                <label for="porte_pequeno">
+                    <input type="radio" name="porte" id="porte_pequeno" value="pequeno" />
+                    Pequeno
+                </label>
+
+                <label for="porte_medio">
+                    <input type="radio" name="porte" id="porte_medio" value="medio" />
+                    Médio
+                </label>
+
+                <label for="porte_grande">
+                    <input type="radio" name="porte" id="porte_grande" value="grande" />
+                    Grande
+                </label>
+            </div>
+
+            <div class="campo">
+                <p>Espécie:</p>
+                <label for="gato">
+                    <input type="radio" name="especie" id="gato" value="gato" />
+                    Gato
+                </label>
+
+                <label for="cachorro">
+                    <input type="radio" name="especie" id="cachorro" value="cachorro" />
+                    Cachorro
+                </label>
+
+                <label for="outros">
+                    <input type="radio" name="especie" id="outros" value="outros" />
+                    Outros
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="raca">Raça:</label>
+                <input type="text" name="raca" id="raca" />
+            </div>
+
+            <div class="campo">
+                <label for="observacoes">Observações:</label>
+                <textarea cols="35" rows="3" name="observacoes" id="observacoes"
+                    placeholder="escreva mais sobre seu bichinho e o que podemos fazer com ele"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dono</legend>
+            <div class="campo">
+                <label for="nome_dono">Nome:</label>
+                <input type="text" name="nome_dono" id="nome_dono" />
+            </div>
+            <div class="campo">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <!-- cpf -->
+            <div class="campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+
+            <fieldset>
+                <legend>Endereços</legend>
+                <div class="campo">
+                    <!-- CEP -->
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep">
+                    <!-- (num Predio) -->
+                    <label for="num_residencia">Número:</label>
+                    <input type="number" name="num_residencia" id="num_residencia">
+                    <!-- Complemento -->
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" name="complemento" id="complemento">
+                    <!-- Informações add -->
+                    <label for="info_add">Informações adicionais</label>
+                    <textarea name="info_add" id="info_add"></textarea>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Serviços</legend>
+            <!-- Banho -->
+            <!-- Tosa -->
+            <!-- Veterinario -->
+        </fieldset>
+
+        <button type="submit" id="submit-btn" onclick="Enviar()">Enviar</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>

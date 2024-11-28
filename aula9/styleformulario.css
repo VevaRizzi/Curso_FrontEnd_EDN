@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Freeman&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
 * {
     font-family: 'Kanit', serif;
     margin: 0;
     padding: 0;
 }
 
+.dark{
+    background-color: #333;
+}
 
 body {
     background-color: rgba(244, 91, 105, 1);
-    position: absolute left 0;
+    position: absolute;
+    left: 0; /* Correção aqui */
     top: 0;
     width: 100%;
 }
-
 
 main {
     position: relative;
@@ -33,13 +35,8 @@ main {
     max-width: 500px;
 }
 
-label {
-    display: block;
-}
-
 /* Estilos dos inputs */
 input {
-    display: block;
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -49,35 +46,43 @@ input {
     margin-bottom: 13px;
 }
 
-.radio-group label, .checkbox-group label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
+.radio-group{
+    display: flex;          /* Altera para flexbox */
+    gap: 60px;             /* Espaçamento entre os itens, ajuste conforme necessário */
 }
 
-.radio-group input, .checkbox-group input {
+.radio-group label{
+    display: flex;
+    align-items:last baseline;
+    cursor: pointer;
+}
+
+.radio-group input{
     margin-right: 5px;
     accent-color: #007bff; /* Customize the accent color */
 }
 
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Wrap to a new line if there's not enough space */
+    justify-content: space-between; /* Space checkboxes evenly */
+    align-items: center; /* Vertically align checkboxes and labels */
+  }
+  
+  .checkbox-group label {
+    margin: 0 10px 10px 0; /* Adjust margins as needed */
+  }
 
 input[type="submit"] {
-    /* Remove o estilo padrão do navegador */
-    appearance: none;
+    appearance: none; /* Remove o estilo padrão do navegador */
     background-color: rgba(244, 91, 105, 1);
     color: whitesmoke;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
-
 }
 
-/* .sumit-btn:hover{
-    não funcionou
-} */
 /* Estilo para o efeito de hover no botão de submit */
 input[type="submit"]:hover {
-    /* Escurece um pouco a cor de fundo quando o mouse passa sobre o botão */
     background-color: #333;
 }
