@@ -1,20 +1,24 @@
-.titulo{
-    color: chocolate;
-}
-
-
-.dark{
+.abobora{
+    color: red;
+  }
+  
+  #titulo{
+    cursor: pointer;
+  }
+  
+  .dark{
     background-color: #333;
-}
-
-.quadrado{
+  }
+  
+  .quadrado{
     border: 1px solid black;
     width: 300px;
     height: 300px;
-
+  
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 40px;
-}
+  
+    font-size: 50px;
+  
+  }
