@@ -15,7 +15,6 @@ DOC: https://openweathermap.org/current
 USING: https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br
 */
 
-const API_KEY = 'f8fcbcf29e9f947f571de7f2f44d5254';
 
 $("#carregarClima").on('click', function(){
     const cidade = $(#cidadeInput).val()
