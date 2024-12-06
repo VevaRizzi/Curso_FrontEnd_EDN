@@ -1,6 +1,12 @@
 //Exercícios Usando Lista
 
 //Exercício 1: Calcular aumento de salário
+/*
+Imagine que você é responsável pelo departamento de Recursos Humanos
+e precisa aplicar um aumento salarial de 10% aos funcionários. 
+Os salários estão armazenados em uma lista, e você deve usar um
+loop para calcular o novo salário de cada um.
+*/
 
 let salarios = [2140, 3560, 5100, 4500, 8000]
 let aumento = 10

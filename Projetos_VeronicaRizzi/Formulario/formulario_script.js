@@ -10,7 +10,6 @@ let botao = document.querySelector('#dark-mode')
 // //alterar conteúdo
 // h1.innerHTML = "Estou usando DOM"
 
-
 // function addRemove(){
 //     h1.classList.toggle("abobora");
 
@@ -22,5 +21,5 @@ function darkMode() {
 }
 
 //Quando a pessoa clicar no meu h1
-h1.addEventListener('click', addRemove)
+// h1.addEventListener('click', addRemove)
 botao.addEventListener('click', darkMode)

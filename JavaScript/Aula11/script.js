@@ -65,28 +65,27 @@ Deixando uma menor carga no servidor.
 Melhorando o desempenho e tempo de carregamento.
 */
 // https://jsonplaceholder.typicode.com/users
-
-
 let btn = $("#carregarDados")
-
 function CarregarDados(){
-    $.ajax({
-        url: "https://jsonplaceholder.typicode.com/users",
-        type: "GET",
-        success: function(resposta){
-            //limpar minha lista
-            $("#listaUsuarios").empty()
-    
-            //agora quero popular minha lista, 
-            //colocar os usuários que pegamos(GET) da API.
-            resposta.forEach(usuario => {
-                $("#listaUsuarios").append(`<li>${usuario.name} - ${usuario.email}</li>`)
-            });
-        },
-        error: function(erro){
-            console.error(`ERRO: ${erro}`)
-        }
-    })
+  $.ajax({
+    url: "https://jsonplaceholder.typicode.com/users",
+    type: "GET",
+    success: function(resposta){
+      // limpar minha lista
+      $("#listaUsuarios").empty()
+  
+      // colocar os usuarios
+      resposta.forEach(usuario => {
+        $("#listaUsuarios").append(`
+            <li>
+            ${usuario.name} - 
+            ${usuario.email}
+            </li>`)
+      });
+    },
+    error: function(erro){
+      console.error(`ERRO: ${erro}`)
+    }
+  })
 }
-
-btn.on("click", CarregarDados)
+btn.on('click', CarregarDados)
